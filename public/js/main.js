@@ -19171,110 +19171,8 @@ var PanelManager = React.createClass({
 
 module.exports = PanelManager;
 
-},{"./InfoPanel.jsx":159,"./ShotPanel.jsx":162,"./StatsPanel.jsx":163,"./WeatherPanel.jsx":164,"react":158}],161:[function(require,module,exports){
+},{"./InfoPanel.jsx":159,"./ShotPanel.jsx":161,"./StatsPanel.jsx":162,"./WeatherPanel.jsx":163,"react":158}],161:[function(require,module,exports){
 var React = require("react");
-
-var ShotData = React.createClass({
-    displayName: "ShotData",
-
-    render: function () {
-        var divStyle = {
-            boxShadow: "0 2px 20px 2px rgba(100,100,100,0.2), inset 0 2px 20px 2px rgba(100,100,100,0.1)",
-            borderRadius: "10",
-            textAlign: "center",
-            marginTop: "20",
-            marginBottom: "20",
-            background: "white"
-        };
-
-        var textStyle = {
-            color: "white"
-        };
-
-        return React.createElement(
-            "div",
-            { style: divStyle },
-            React.createElement(
-                "div",
-                { className: "col-sm-4", style: textStyle },
-                React.createElement(
-                    "div",
-                    { className: "row" },
-                    React.createElement(
-                        "h3",
-                        null,
-                        " ",
-                        this.props.viewCount,
-                        " "
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { className: "row" },
-                    React.createElement(
-                        "h4",
-                        null,
-                        " Shot Views "
-                    )
-                )
-            ),
-            React.createElement(
-                "div",
-                { className: "col-sm-4" },
-                React.createElement(
-                    "div",
-                    { className: "row" },
-                    React.createElement(
-                        "h3",
-                        null,
-                        " ",
-                        this.props.likes,
-                        " "
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { className: "row" },
-                    React.createElement(
-                        "h4",
-                        null,
-                        " Likes "
-                    )
-                )
-            ),
-            React.createElement(
-                "div",
-                { className: "col-sm-4" },
-                React.createElement(
-                    "div",
-                    { className: "row" },
-                    React.createElement(
-                        "h3",
-                        null,
-                        " ",
-                        this.props.commentCount,
-                        " "
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { className: "row" },
-                    React.createElement(
-                        "h4",
-                        null,
-                        " Comments "
-                    )
-                )
-            )
-        );
-    }
-});
-
-module.exports = ShotData;
-
-},{"react":158}],162:[function(require,module,exports){
-var React = require("react");
-var ShotData = require("./ShotData.jsx");
 
 var ShotPanel = React.createClass({
     displayName: "ShotPanel",
@@ -19378,7 +19276,7 @@ var ShotPanel = React.createClass({
 
 module.exports = ShotPanel;
 
-},{"./ShotData.jsx":161,"react":158}],163:[function(require,module,exports){
+},{"react":158}],162:[function(require,module,exports){
 var React = require("react");
 
 var StatsPanel = React.createClass({
@@ -19409,7 +19307,7 @@ var StatsPanel = React.createClass({
 
         var statStyle = {
             fontFamily: "Calibri",
-            fontSize: "36",
+            fontSize: "32",
             color: "white"
         };
 
@@ -19445,7 +19343,7 @@ var StatsPanel = React.createClass({
 
 module.exports = StatsPanel;
 
-},{"react":158}],164:[function(require,module,exports){
+},{"react":158}],163:[function(require,module,exports){
 var React = require("react");
 
 var WeatherPanel = React.createClass({
@@ -19516,11 +19414,11 @@ var WeatherPanel = React.createClass({
 
 module.exports = WeatherPanel;
 
-},{"react":158}],165:[function(require,module,exports){
+},{"react":158}],164:[function(require,module,exports){
 var React = require("react");
 var ReactDOM = require("react-dom");
 var PanelManager = require("./components/PanelManager.jsx");
 
 ReactDOM.render(React.createElement(PanelManager, null), document.getElementById("PanelManager"));
 
-},{"./components/PanelManager.jsx":160,"react":158,"react-dom":29}]},{},[165]);
+},{"./components/PanelManager.jsx":160,"react":158,"react-dom":29}]},{},[164]);

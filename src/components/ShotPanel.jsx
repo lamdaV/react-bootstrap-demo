@@ -1,5 +1,4 @@
 var React = require("react");
-var ShotData = require("./ShotData.jsx");
 
 var ShotPanel = React.createClass({
     getInitialState: function() {

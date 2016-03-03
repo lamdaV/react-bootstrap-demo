@@ -26,7 +26,7 @@ var StatsPanel = React.createClass({
 
         var statStyle = {
             fontFamily: "Calibri",
-            fontSize: "36",
+            fontSize: "32",
             color: "white",
         };
 
