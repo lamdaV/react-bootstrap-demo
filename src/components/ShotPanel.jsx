@@ -11,6 +11,10 @@ var ShotPanel = React.createClass({
     },
 
     render: function() {
+        var panelStyle = {
+            boxShadow: "2px 8px 12px #aaaaaa",
+        };
+
         var headerStyle = {
             height: 200,
         };
@@ -38,7 +42,7 @@ var ShotPanel = React.createClass({
 
         return (
             <div onClick = {this.handleClick}>
-                <div className = "panel panel-default">
+                <div className = "panel panel-default" style = {panelStyle}>
                     <div className = "panel-header" style = {headerStyle}>
                     </div>
 

@@ -5,6 +5,7 @@ var StatsPanel = React.createClass({
         var divStyle = {
             height: "140",
             width: "180",
+            boxShadow: "2px 8px 12px #aaaaaa",
         }
         var headerStyle = {
             background: "green",

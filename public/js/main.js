@@ -19040,7 +19040,8 @@ var InfoPanel = React.createClass({
         var divStyle = {
             height: 200,
             width: 180,
-            background: "#939393"
+            background: "#939393",
+            boxShadow: "2px 8px 12px #aaaaaa"
         };
 
         var numberStyle = {
@@ -19187,6 +19188,10 @@ var ShotPanel = React.createClass({
     },
 
     render: function () {
+        var panelStyle = {
+            boxShadow: "2px 8px 12px #aaaaaa"
+        };
+
         var headerStyle = {
             height: 200
         };
@@ -19217,7 +19222,7 @@ var ShotPanel = React.createClass({
             { onClick: this.handleClick },
             React.createElement(
                 "div",
-                { className: "panel panel-default" },
+                { className: "panel panel-default", style: panelStyle },
                 React.createElement("div", { className: "panel-header", style: headerStyle }),
                 React.createElement(
                     "div",
@@ -19285,7 +19290,8 @@ var StatsPanel = React.createClass({
     render: function () {
         var divStyle = {
             height: "140",
-            width: "180"
+            width: "180",
+            boxShadow: "2px 8px 12px #aaaaaa"
         };
         var headerStyle = {
             background: "green",
@@ -19368,7 +19374,8 @@ var WeatherPanel = React.createClass({
         var divStyle = {
             height: 200,
             width: 180,
-            background: this.state.bgColor
+            background: this.state.bgColor,
+            boxShadow: "2px 8px 12px #aaaaaa"
         };
 
         var temperatureStyle = {

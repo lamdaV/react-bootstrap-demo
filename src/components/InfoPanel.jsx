@@ -6,6 +6,7 @@ var InfoPanel = React.createClass({
             height: 200,
             width: 180,
             background: "#939393",
+            boxShadow: "2px 8px 12px #aaaaaa",
         };
 
         var numberStyle = {

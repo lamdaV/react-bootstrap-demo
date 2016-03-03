@@ -21,6 +21,7 @@ var WeatherPanel = React.createClass({
             height: 200,
             width: 180,
             background: this.state.bgColor,
+            boxShadow: "2px 8px 12px #aaaaaa",
         };
 
         var temperatureStyle = {
