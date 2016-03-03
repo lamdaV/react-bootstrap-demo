@@ -8,6 +8,7 @@ var PanelManager = React.createClass({
     render: function() {
         return (
             <div>
+                <br></br>
                 <div className = "row">
                     <div className = "col-sm-3">
                         <InfoPanel number = "20" text = "New followers added this month"/>

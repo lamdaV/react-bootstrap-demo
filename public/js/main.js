@@ -19096,6 +19096,7 @@ var PanelManager = React.createClass({
         return React.createElement(
             "div",
             null,
+            React.createElement("br", null),
             React.createElement(
                 "div",
                 { className: "row" },
